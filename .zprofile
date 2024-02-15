@@ -54,3 +54,6 @@ mkcdir() {
         mkdir -p "$1" 
     fi && cd "$1"
 }
+
+#python venv
+source ~/python/venv/bin/activate
