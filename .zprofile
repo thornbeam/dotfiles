@@ -32,9 +32,7 @@ alias grh0="git reset --hard HEAD"
 alias grh1="git reset --hard HEAD~1"
 
 # go to current working directory
-alias cwd0="cd /Users/aptenodytes/projects/django_feinstaub/"
-alias cwd1="cd /Users/aptenodytes/projects/python/MIT6_0002F16/assignments/PS2"
-alias cwd2="cd /Users/aptenodytes/studio_cologne/schilling_architekten-vite"
+alias cwd="cd /Users/aptenodytes/studio_cologne/tecta/shopware/dev/custom/plugins/Studio_Tecta_2020" 
 
 # keygen
 alias sshkeygen='ssh-keygen -t ed25519 -C'
