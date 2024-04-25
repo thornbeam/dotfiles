@@ -1,5 +1,4 @@
 *
-
 !.gitconfig
 !.gitignore
 !.gitignore_global
@@ -7,3 +6,4 @@
 !.tmux.conf
 !.vimrc
 !.zprofile
+!.bashrc
