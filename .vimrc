@@ -1,17 +1,11 @@
 set nocompatible
-
 set encoding=utf-8
-
 set number
-
-" set mouse=a
-
 " set clipboard=unnamedplus
 
 " filetype on
 " filetype indent on
 " filetype plugin indent on
-
 
 set autoindent
 set smartindent
@@ -35,15 +29,6 @@ syntax on
 
 set laststatus=2
 set background=dark
-
-" let g:jellybeans_overrides = {
-" \    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-" \}
-" if has('termguicolors') && &termguicolors
-"     let g:jellybeans_overrides['background']['guibg'] = 'none'
-" endif
-" 
-" colorscheme jellybeans
 
 highlight clear LineNr
 highlight VertSplit cterm=NONE

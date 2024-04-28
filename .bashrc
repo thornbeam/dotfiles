@@ -25,7 +25,7 @@ alias grh0="git reset --hard HEAD"
 alias grh1="git reset --hard HEAD~1"
 
 # keygen
-alias sshkeygen='ssh-keygen -t ed25519 -C'
+alias sshkeygen='ssh-keygen -t ed25519'
 
 # wireguard
 alias wg-up='wg-quick up wg_config'
@@ -33,8 +33,12 @@ alias wg-down='wg-quick down wg_config'
 
 # mkdir + cd
 mkcdir() {
-    if [ -d "$1" ]; then
-        printf "mkcdir: warning, \"%s\" already exists\n" "$1"
+  if [ -d "$1" ]; then
+    printf "mkcdir: warning, \"%s\" already exists\n" "$1"
+  else
+    mkdir -p "$1"
+  fi && cd "$1"
+}
 
 # python
 alias python='python3'
