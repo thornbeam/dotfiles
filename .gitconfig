@@ -8,3 +8,24 @@
 [user]
 	name = thornbeam
 	email = thornbeam@posteo.eu
+[alias]
+	ad = add
+	aA = add -all
+	df = diff
+	lg = log
+	sw = show
+	st = status
+	br = branch
+	bA = branch --all
+	bR = branch --remote
+	cM = commit -m
+	co = checkout
+	mg = merge
+	rs = restore
+	rH = reset --hard
+	rH1 = reset --hard HEAD~1
+	pl = pull
+	ps = push
+	tg = tag
+	ft = fetch
+	fP = fetch --prune
