@@ -52,6 +52,7 @@ Plug 'phelipetls/vim-hugo'
 Plug 'pangloss/vim-javascript'
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+Plug 'rhysd/vim-clang-format'
 "Plug 'leafgarland/typescript-vim'
 " polyglot contains vim jsx pretty
 "Plug 'maxmellon/vim-jsx-pretty'
