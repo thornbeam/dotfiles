@@ -145,3 +145,8 @@ let g:airline_right_sep = ""
 
 " lopen/lclose
 let g:ycm_always_populate_location_list = 1
+
+" Abbreviations
+" prettier
+:autocmd BufEnter *.{html,js,jsx,ts,tsx}
+  \ :ab P Prettier
