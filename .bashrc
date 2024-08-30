@@ -140,7 +140,7 @@ mkdc() {
 }
 
 # update
-alias update="sudo apt update && sudo apt upgrade"
+alias update="sudo apt update && sudo apt upgrade && sudo snap refresh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
