@@ -45,4 +45,4 @@ alias python='python3'
 [ -f "$HOME/python/venv/bin/activate" ] && \. "$HOME/python/venv/bin/activate"
 
 # other aliases
-[ -f "$HOME/.bashrc_aliases" ] && \. "$HOME/.bashrc_aliases"
+[ -f "$HOME/.bash_aliases" ] && \. "$HOME/.bash_aliases"
