@@ -136,7 +136,7 @@ nmap <F10> :IPythonCellInsertBelow<CR>a
 imap <F9> <C-o>:IPythonCellInsertAbove<CR>
 imap <F10> <C-o>:IPythonCellInsertBelow<CR>
 
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline_theme = "monochrome"
 let g:airline_left_sep = ""
 let g:airline_right_sep = ""
