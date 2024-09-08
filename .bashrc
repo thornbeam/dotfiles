@@ -92,15 +92,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -153,7 +144,16 @@ export NVM_DIR="$HOME/.nvm"
 # python
 alias python='python3'
 alias pip='pip3'
-[ -f "$HOME/python/main/bin/activate" ] && \. "$HOME/python/main/bin/activate"
+[ -f "$HOME/Projects/python/main/bin/activate" ] && \. "$HOME/Projects/python/main/bin/activate"
 
 export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
