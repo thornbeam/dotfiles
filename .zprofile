@@ -20,6 +20,7 @@ alias l="ls -l"
 # git
 alias g="git"
 alias gl="git log"
+alias glo="git log --oneline --graph --decorate --all"
 alias gd="git diff"
 alias gst="git status"
 alias gsw="git show"
