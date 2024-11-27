@@ -17,6 +17,11 @@ alias ll="ls -la"
 alias la="ls -a"
 alias l="ls -l"
 
+# avoid making mistakes
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
 # git
 alias g="git"
 alias gl="git log"

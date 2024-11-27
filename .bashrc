@@ -10,13 +10,21 @@ alias ll="ls -la"
 alias la="ls -a"
 alias l="ls -l"
 
+# avoid making mistakes
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
 # git
+alias g="git"
 alias gl="git log"
 alias glo="git log --oneline --graph --decorate --all"
 alias gd="git diff"
 alias gst="git status"
 alias gsw="git show"
 alias gc="git checkout"
+alias gf="git fetch"
+alias gfp="git fetch --prune"
 alias gac="git add -A && git commit -m"
 alias gps="git pull && git push"
 alias gpl="git pull"
