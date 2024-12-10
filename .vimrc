@@ -3,9 +3,7 @@ set encoding=utf-8
 set number
 " set clipboard=unnamedplus
 
-" filetype on
-" filetype indent on
-" filetype plugin indent on
+filetype plugin indent on
 
 set autoindent
 set smartindent
