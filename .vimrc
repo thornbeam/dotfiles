@@ -23,6 +23,9 @@ set smartcase
 set scrolloff=3
 set sidescrolloff=5
 set wrap
+
+set termguicolors
+
 syntax on
 
 set laststatus=2
