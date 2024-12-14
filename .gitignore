@@ -1,4 +1,4 @@
-*
+/*
 !.gitconfig
 !.gitignore
 !.gitignore_global
@@ -7,3 +7,6 @@
 !.vimrc
 !.zprofile
 !.bashrc
+!.config/
+.config/*
+!.config/nvim/
