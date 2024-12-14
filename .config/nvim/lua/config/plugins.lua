@@ -26,6 +26,8 @@ Plug ('hrsh7th/nvim-cmp')
 
 Plug ('windwp/nvim-autopairs')
 
-Plug('lukas-reineke/indent-blankline.nvim')
+Plug ('prettier/vim-prettier', { ['do'] = 'yarn install --frozen-lockfile --production' })
+
+Plug('ckipp01/stylua-nvim')
 
 vim.call('plug#end')
