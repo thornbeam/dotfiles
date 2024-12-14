@@ -36,41 +36,61 @@ highlight VertSplit cterm=NONE
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
 Plug 'jpalardy/vim-slime', { 'for': 'python' }
 Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-commentary'
+Plug 'mattn/emmet-vim' " expanding abbreviations for html / css
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'tpope/vim-fugitive'
 Plug 'Yggdroot/indentLine'
-Plug 'fatih/vim-go'
-Plug 'phelipetls/vim-hugo'
-Plug 'pangloss/vim-javascript'
 Plug 'psf/black', { 'branch': 'stable' }
-Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
-Plug 'rhysd/vim-clang-format'
-Plug 'udalov/kotlin-vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+"Plug 'ycm-core/YouCompleteMe' " autocompletion
+"Plug 'sheerun/vim-polyglot' " syntax highlightning / indentation
+"Plug 'fatih/vim-go'
+"Plug 'phelipetls/vim-hugo'
+"Plug 'pangloss/vim-javascript'
+"Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+"Plug 'rhysd/vim-clang-format'
+"Plug 'udalov/kotlin-vim'
 "Plug 'leafgarland/typescript-vim'
 " polyglot contains vim jsx pretty
 "Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
-" Go syntax highlighting
-let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_operators = 1
+" Vim LSP - BEGIN
+"let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
+"let g:lsp_document_highlight_enabled = 0
+" Vim LSP - END
 
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" ASYNCOMPLETE - BEGIN
+" -- enable tab completion --
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+" -- enable preview window --
+" allow modifying the completeopt variable, or it will
+" be overridden all the time
+"let g:asyncomplete_auto_completeopt = 0
+"
+"set completeopt=menuone,noinsert,noselect,preview
+" ASYNCOMPLETE - END
+
+" Go syntax highlighting
+"let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
+"let g:go_highlight_fields = 1
+"let g:go_highlight_functions = 1
+"let g:go_highlight_function_calls = 1
+"let g:go_highlight_extra_types = 1
+"let g:go_highlight_operators = 1
+
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 "------------------------------------------------------------------------------
 " slime configuration 
