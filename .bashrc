@@ -165,3 +165,6 @@ export EDITOR="$VISUAL"
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+. "$HOME/.cargo/env"
