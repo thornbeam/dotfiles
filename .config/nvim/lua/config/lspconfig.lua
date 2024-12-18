@@ -2,8 +2,10 @@ require'lspconfig'.bashls.setup{}
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.docker_compose_language_service.setup{}
 require'lspconfig'.dockerls.setup{}
+require'lspconfig'.html.setup{}
 require'lspconfig'.kotlin_language_server.setup{}
 require'lspconfig'.lua_ls.setup{}
+require'lspconfig'.phpactor.setup{}
 require'lspconfig'.pylsp.setup{}
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.ts_ls.setup{}

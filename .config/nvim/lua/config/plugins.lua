@@ -30,4 +30,6 @@ Plug ('prettier/vim-prettier', { ['do'] = 'yarn install --frozen-lockfile --prod
 
 Plug('ckipp01/stylua-nvim')
 
+Plug ('mattn/emmet-vim')
+
 vim.call('plug#end')
