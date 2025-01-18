@@ -32,4 +32,6 @@ Plug('ckipp01/stylua-nvim')
 
 Plug ('mattn/emmet-vim')
 
+Plug ('rhysd/vim-clang-format')
+
 vim.call('plug#end')
