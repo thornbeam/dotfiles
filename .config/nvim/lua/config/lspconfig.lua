@@ -8,6 +8,7 @@ require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.phpactor.setup{}
 require'lspconfig'.pylsp.setup{}
 require'lspconfig'.pyright.setup{}
+require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.ts_ls.setup{}
 
 -- Customizing how diagnostics are displayed
