@@ -109,6 +109,20 @@ alias cp="cp -i"
 alias mv="mv -i"
 
 # git
+gpl_all() {
+  BRANCH=$(git branch --show-current)
+  for REMOTE in $(git remote); do
+    git pull $REMOTE $BRANCH
+  done
+}
+gps_all() {
+  gpl_all
+  BRANCH=$(git branch --show-current)
+  for REMOTE in $(git remote); do
+    echo "Pushing on remote $REMOTE on branch $BRANCH ..."
+    git push $REMOTE $BRANCH
+  done
+}
 alias g="git"
 alias gl="git log"
 alias glo="git log --oneline --graph --decorate --all"
@@ -119,8 +133,8 @@ alias gc="git checkout"
 alias gf="git fetch"
 alias gfp="git fetch --prune"
 alias gac="git add -A && git commit -m"
-alias gps="git pull && git push"
-alias gpl="git pull"
+alias gps="gps_all"
+alias gpl="gpl_all"
 alias gm="git merge"
 alias grh="git reset --hard"
 alias grh0="git reset --hard HEAD"
