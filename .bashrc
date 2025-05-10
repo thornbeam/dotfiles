@@ -166,7 +166,8 @@ export NVM_DIR="$HOME/.nvm"
 # python
 alias python='python3'
 alias pip='pip3'
-[ -f "$HOME/Projects/python/main/bin/activate" ] && \. "$HOME/Projects/python/main/bin/activate"
+# Activate python venv
+#[ -f "$HOME/Python/main/bin/activate" ] && \. "$HOME/Python/main/bin/activate"
 
 export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
