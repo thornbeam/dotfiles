@@ -169,7 +169,7 @@ alias pip='pip3'
 # Activate python venv
 #[ -f "$HOME/Python/main/bin/activate" ] && \. "$HOME/Python/main/bin/activate"
 
-export VISUAL="/usr/bin/vim"
+export VISUAL="/usr/bin/nvim"
 export EDITOR="$VISUAL"
 
 # Alias definitions.
