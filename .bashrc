@@ -182,7 +182,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Neovim
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim/"
 
 # Rust
 if [ -f $HOME/.cargo/env ]; then
