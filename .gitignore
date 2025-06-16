@@ -7,6 +7,7 @@
 !.vimrc
 !.zprofile
 !.bashrc
+!.zshrc
 !.config/
 .config/*
 !.config/nvim/
