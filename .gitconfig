@@ -29,3 +29,5 @@
 	tg = tag
 	ft = fetch
 	fP = fetch --prune
+[includeIf "gitdir:~/Projects/bfb/"]
+    path = ~/Projects/bfb/.gitconfig_include
