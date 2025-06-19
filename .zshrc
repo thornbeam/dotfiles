@@ -75,6 +75,9 @@ alias python='python3'
 alias pip='pip3'
 [ -f "$HOME/python/main/bin/activate" ] && \. "$HOME/python/main/bin/activate"
 
+export VISUAL="/opt/homebrew/bin/nvim"
+export EDITOR="$VISUAL"
+
 # other aliases
 [ -f "$HOME/.bash_aliases" ] && \. "$HOME/.bash_aliases"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
