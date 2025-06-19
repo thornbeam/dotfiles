@@ -34,4 +34,6 @@ Plug ('mattn/emmet-vim')
 
 Plug ('rhysd/vim-clang-format')
 
+Plug ('stephpy/vim-php-cs-fixer')
+
 vim.call('plug#end')
