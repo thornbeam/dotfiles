@@ -86,3 +86,12 @@ export EDITOR="$VISUAL"
 
 # other aliases
 [ -f "$HOME/.bash_aliases" ] && \. "$HOME/.bash_aliases"
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/aptenodytes/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+#
+export PATH="/usr/local/opt/php@8.3/bin:$PATH"
+export PATH="/usr/local/opt/php@8.3/sbin:$PATH"
