@@ -1,4 +1,7 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+## MacBook Pro
+[ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+## MacBook Air
+[ -f "/usr/local/bin/brew" ] && eval "$(/usr/local/bin/brew shellenv)"
 
 ## Setting PATH for Python 3.11
 ## The original version is saved in .zprofile.pysave
@@ -75,7 +78,10 @@ alias python='python3'
 alias pip='pip3'
 [ -f "$HOME/python/main/bin/activate" ] && \. "$HOME/python/main/bin/activate"
 
-export VISUAL="/opt/homebrew/bin/nvim"
+## MacBook Pro
+[ -f "/opt/homebrew/bin/nvim" ] && export VISUAL="/opt/homebrew/bin/nvim"
+## MacBook Air
+[ -f "/usr/local/bin/nvim" ] && export VISUAL="/usr/local/bin/nvim"
 export EDITOR="$VISUAL"
 
 # other aliases
