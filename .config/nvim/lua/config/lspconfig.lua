@@ -3,6 +3,7 @@ require'lspconfig'.clangd.setup{}
 require'lspconfig'.docker_compose_language_service.setup{}
 require'lspconfig'.dockerls.setup{}
 require'lspconfig'.html.setup{}
+require'lspconfig'.intelephense.setup{}
 require'lspconfig'.kotlin_language_server.setup{}
 require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.phpactor.setup{}
