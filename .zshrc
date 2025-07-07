@@ -62,7 +62,7 @@ mkcdir() {
 # python
 alias python='python3'
 alias pip='pip3'
-[ -f "$HOME/python/main/bin/activate" ] && \. "$HOME/python/main/bin/activate"
+[ -f "$HOME/Python/Main/bin/activate" ] && \. "$HOME/Python/Main/bin/activate"
 
 # other aliases
 [ -f "$HOME/.bash_aliases" ] && \. "$HOME/.bash_aliases"

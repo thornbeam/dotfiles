@@ -19,5 +19,14 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR="$VISUAL"
 
 # Force PHP version to 8.3 due to compatibility for PHP-CS-Fixer
-export PATH="/usr/local/opt/php@8.3/bin:$PATH"
-export PATH="/usr/local/opt/php@8.3/sbin:$PATH"
+## MacBook Pro
+[ -d "/opt/homebrew/opt/php@8.3/bin" ] && export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
+[ -d "/opt/homebrew/opt/php@8.3/sbin" ] && export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
+## MacBook Air
+[ -d "/usr/local/opt/php@8.3/bin" ] && export PATH="/usr/local/opt/php@8.3/bin:$PATH"
+[ -d "/usr/local/opt/php@8.3/sbin" ] && export PATH="/usr/local/opt/php@8.3/sbin:$PATH"
+
+# Setting PATH for Python 3.13
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.13/bin:${PATH}"
+export PATH
