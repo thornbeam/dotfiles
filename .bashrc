@@ -169,8 +169,13 @@ alias pip='pip3'
 # Activate python venv
 #[ -f "$HOME/Python/main/bin/activate" ] && \. "$HOME/Python/main/bin/activate"
 
+# Set neovim as default editor
 export VISUAL="/usr/bin/nvim"
 export EDITOR="$VISUAL"
+
+# neovim config path
+alias nvimconfig="cd $HOME/.config/nvim/lua/config/"
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
