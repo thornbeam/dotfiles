@@ -64,6 +64,11 @@ alias python='python3'
 alias pip='pip3'
 [ -f "$HOME/Python/Main/bin/activate" ] && \. "$HOME/Python/Main/bin/activate"
 
+# Rust
+if [ -f $HOME/.cargo/env ]; then
+    . $HOME/.cargo/env
+fi
+
 # neovim config path
 alias nvimconfig="cd $HOME/.config/nvim/lua/config/"
 

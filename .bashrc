@@ -176,6 +176,13 @@ export EDITOR="$VISUAL"
 # neovim config path
 alias nvimconfig="cd $HOME/.config/nvim/lua/config/"
 
+# Neovim
+export PATH="$PATH:/opt/nvim/"
+
+# Rust
+if [ -f $HOME/.cargo/env ]; then
+    . $HOME/.cargo/env
+fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -184,12 +191,4 @@ alias nvimconfig="cd $HOME/.config/nvim/lua/config/"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
-fi
-
-# Neovim
-export PATH="$PATH:/opt/nvim/"
-
-# Rust
-if [ -f $HOME/.cargo/env ]; then
-    . $HOME/.cargo/env
 fi
